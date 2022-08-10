@@ -1,0 +1,2314 @@
+body {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    overflow-x: hidden;
+  }
+  
+  p.text-muted {
+    color: #8292a2 !important;
+    ;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #E7E7E7;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #0D6EFD;
+  }
+  
+  ol, ul {
+    padding-left: 0rem;
+  }
+  
+  #mobRowId {
+    position: relative;
+  }
+  
+  #mobRowId label.error {
+    position: absolute;
+    top: 55px;
+    left: 48px;
+    color: #f00;
+    opacity: 1;
+    font-size: 13px !important;
+  }
+  
+  .navbar {
+    padding: 0 110px 0 0;
+  }
+  
+  .navbar .avatorheader {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+  }
+  
+  @media(min-width:992px) {
+    .navbar {
+      padding: 0 0;
+    }
+    .navbar .avatorheader {
+      position: relative;
+      right: 0px;
+      top: 5px;
+    }
+  }
+  
+  .text-dark-blue {
+    color: #041b67;
+  }
+  
+  .text-blue {
+    color: #2F6FF1;
+  }
+  
+  .btn-primary {
+    background: #2F6FF1;
+  }
+  
+  .blue-bg {
+    color: #2F6FF1;
+  }
+  
+  .text-pink {
+    color: #f35757 !important;
+  }
+  
+  .bold {
+    font-weight: 700;
+    color: #041b67;
+    opacity: 0.8;
+  }
+  
+  .min-ht {
+    min-height: 55px;
+  }
+  
+  .dark-blue-bg {
+    background-color: #0a2889;
+  }
+  
+  .ta-c {
+    padding-left: 16%;
+  }
+  
+  .text-trans-none {
+    text-transform: none;
+  }
+  
+  .greycolor {
+    color: #717589;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 5px 0;
+    z-index: 99999;
+    position: relative;
+    min-height: 65px;
+    box-shadow: 0px 2px 40px rgba(32, 64, 96, 0.1);
+  }
+  
+  header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+  }
+  
+  /*.Avatar_1 {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 1px #263275 solid;
+      display: block;
+      background-color: #f5f5f5
+  }*/
+  
+  #myHeader .container {
+    position: relative;
+    /*  */
+  }
+  
+  .navbar {
+    justify-content: justify-self !important;
+    position: static;
+  }
+  
+  .navbar .navbar-toggler {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 0;
+    padding: 0;
+    color: #2643a0;
+  }
+  
+  .navbar .navbar-toggler {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    border: 0;
+    padding: 0;
+    color: #2643a0;
+    width: 30px;
+    height: 30px;
+    outline: 0;
+  }
+  
+  .menu-toggle-btn span {
+    background: #041f6c;
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.3s linear;
+  }
+  
+  .menu-toggle-btn.open span:nth-child(1) {
+    transform: translate(0px, 0) rotate(-45deg);
+    margin: 0;
+    width: 32px;
+  }
+  
+  .menu-toggle-btn.open span:nth-child(2) {
+    height: 0;
+    margin: 0;
+  }
+  
+  .menu-toggle-btn.open span:nth-child(3) {
+    transform: translate(0px, 0) rotate(45deg);
+    margin: 0;
+    width: 32px;
+  }
+  
+  .navbar .header-logo {
+    margin-right: 0px;
+  }
+  
+  .navbar .header-logo img {
+    min-height: 31px;
+    width: 220px;
+  }
+  
+  .navbar .nav-item {
+    color: #041b67;
+    padding: 4px 21px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .navbar .nav-item:before {
+    display: none;
+    position: absolute;
+    content: "";
+    transition: 0.5s;
+    left: 10px;
+    right: 30px;
+    bottom: -18px;
+    margin: 0 auto;
+    width: 0;
+    height: 2px;
+    background-color: #041b67;
+  }
+  
+  .navbar .nav-item:hover:before {
+    width: calc(100% - 32px);
+  }
+  
+  .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link a {
+    font-size: 14px;
+  }
+  
+  .nav-item.dropdown .cstm-dropdown-menu>div {
+    border: 0;
+    margin: 18px 0 0 0;
+    border-radius: .25rem;
+    box-shadow: 0 1px 8px rgba(131, 131, 131, 19%);
+  }
+  
+  button:focus:not(:focus-visible) {
+    outline: 0;
+    box-shadow: none;
+  }
+  
+  .blue-bg {
+    background-color: #0d6efd;
+  }
+  
+  .buttonRadius {
+    border-radius: 2rem;
+    vertical-align: middle;
+  }
+  
+  .dropdownCustom::after {
+    margin-left: 0.105em;
+    vertical-align: 0.1em;
+    /* carousel indicator style */
+  }
+  
+  .carousel-indicators {
+    bottom: 36px;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    height: 5px;
+  }
+  
+  .carousel-indicators .active {
+    opacity: 1;
+    background-color: #2F6FF1;
+  }
+  
+  .carousel-caption {
+    top: 50%;
+    transform: translate(-12%, -50%);
+    bottom: initial;
+    letter-spacing: 1.5px;
+  }
+  
+  .carousel-item {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  /* .cards .input-group {
+    padding: 1px;
+    border: 1px solid;
+    margin: 10px;
+  }
+  .cards .input-group-lg > .btn {
+    background-color: #eba10d;
+  } */
+  
+  .cards label {
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background-color: white;
+    font-weight: 500;
+  }
+  
+  /* .carousel .carousel-item img {
+    min-height: 500px;
+    min-width: 100%;
+  } */
+  
+  #Testimonials .rowHeight {
+    position: relative;
+    margin-top: -50px;
+  }
+  
+  #Testimonials .card-body {
+    position: relative;
+    padding: 3.6rem 1.6rem 2rem;
+    /* box-shadow: 10px 10px #888888; */
+    color: #fff;
+    /* border-radius: 20px; */
+  }
+  
+  /* 767 max width */
+  
+  .textMobileCenter {
+    text-align: center;
+  }
+  
+  /* footer style */
+  
+  footer {
+    background: #001c5b;
+    color: #fff;
+  }
+  
+  .copyright {
+    background: #002880;
+    color: #fff;
+    font-family: Fira Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+  }
+  
+  .footLinks ul li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 2.2;
+  }
+  
+  .footLinks ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #breadcrumb-cus {
+    font-size: 10px;
+    margin-top: 100px;
+  }
+  
+  /* our other apps */
+  
+  .block-bg__stay-button {
+    width: 160px;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    box-sizing: border-box;
+    border-radius: 54px;
+    background: transparent;
+    color: #fff;
+    padding: 15px 0 15px 41px;
+    text-align: left;
+  }
+/
+  
+
+  
+  .darkblueoverlay {
+    background: linear-gradient(180deg, rgba(0, 28, 90, 0.87) 0%, rgba(47, 113, 255, 0.87) 200.65%);
+    border-radius: 10px;
+  }
+  
+  .letthetext {
+    position: relative;
+    left: 76px;
+    top: 13px;
+  }
+  
+  .splide__arrow {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 0;
+  }
+  
+  .sendLink {
+    cursor: pointer;
+    background: #eba10d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* .card-normalTxt {
+    line-height: 36px;
+    font-family: Fira Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  } */
+  
+  .card-boldTxt {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  
+  .downloadTxt {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    color: #fff;
+    opacity: 0.5;
+    text-align: left;
+  }
+  
+  .hide-mob {
+    text-align: left;
+  }
+  
+  /* baazi rewards slider css starts */
+  
+  /* .baaziRewardscrd {
+    border-radius: 16px;
+    background-image: linear-gradient(
+        360deg,
+        #70076b 0.39%,
+        rgba(4, 37, 255, 0) 131.91%
+      ),
+      url(../images/Group_841.png);
+    background-size: 518px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 4px rgba(4, 37, 255, 0);
+    background-position: 87% 100%;
+    background-repeat: no-repeat;
+    padding: 8rem 2rem 8rem;
+  } */
+  
+  /* baazi rewards slider css end */
+  
+  #variants .splide__arrow {
+    top: 50%;
+  }
+  
+  #variants .splide__arrow--next {
+    right: -2em;
+  }
+  
+  #variants .splide__arrow--prev {
+    left: -2em;
+  }
+  
+  #promotions .splide__arrow--next {
+    right: -2em;
+  }
+  
+  #promotions .splide__arrow--prev {
+    left: -2em;
+  }
+  
+  #promotions .splide__arrow {
+    top: 50%;
+  }
+  
+  #Testimonials .imageHalfRound {
+    position: relative;
+    top: 58px;
+    z-index: 999;
+    right: 0%;
+    width: 120px;
+  }
+  
+  #Testimonials .splide__slide .card-body {
+    background: #a1a1a1;
+    z-index: -1;
+  }
+  
+  #Testimonials .splide__arrow--next {
+    right: -2em;
+  }
+  
+  #Testimonials .splide__arrow--prev {
+    left: -2em;
+  }
+  
+  #Testimonials .splide__arrow {
+    top: 70%;
+  }
+  
+  #Testimonials .is-visible.is-active .card-body {
+    background: #0d6efd;
+    opacity: 1;
+  }
+  
+  #Testimonials .card {
+    background: none;
+    border: none;
+    box-shadow: 10px 10px #cecece;
+    border-radius: 0;
+  }
+  
+  /* #Testimonials .splide__slide.is-visible.is-active .card-body{
+              background:#0d6efd;
+              transform: scale(1);
+              z-index: 10;
+              opacity: 1;
+              border: none;
+              box-shadow: 1px 0px 10px 5px #eaeaea;
+              color: #222222;
+    }
+  
+    #Testimonials .splide__slide.is-visible .card-body{
+      background:#a1a1a1;
+      transform: scale(1);
+      z-index: 10;
+      opacity: 1;
+      border: none;
+      box-shadow: 1px 0px 10px 5px #eaeaea;
+      color: #222222;
+  } */
+  
+  /* testimonial card */
+  
+  /* Testimonials  cards css starts */
+  
+  .imageTopp img {
+    position: relative;
+    margin: auto;
+  }
+  
+  #Home_baazi_Rewards-track {
+    padding: 2rem 0rem 2rem;
+  }
+  
+  #Home_baazi_Rewards .splide {
+    padding: 20px 0;
+  }
+  
+  #Home_baazi_Rewards .splide__slide img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 400ms;
+    transform: scale(0.9);
+    transform-origin: center center;
+    z-index: 1;
+  }
+  
+  #Home_baazi_Rewards .splide__slide.is-active img {
+    transform: scale(1.3);
+    position: relative;
+    z-index: 999;
+  }
+  
+  #baaziRewards .splide__slide .card-body {
+    opacity: .5;
+  }
+  
+  #baaziRewards .is-visible.is-active .card-body {
+    opacity: 1;
+  }
+  
+  #baaziRewards .card-square {
+    flex: 1 1 auto;
+    padding: 4rem 1rem;
+  }
+  
+  #baaziRewards .card-body {
+    position: relative;
+    padding: 3.6rem 1.6rem 2rem;
+    border: 1px solid;
+    /* box-shadow: 10px 10px #888888; */
+  }
+  
+  #baaziRewards .card {
+    background: #a1a1a1;
+    border-radius: 0;
+    color: white;
+    margin: 0px 20px;
+  }
+  
+  #baaziRewards .imageHalfRound {
+    position: relative;
+    top: 60px;
+    z-index: 999;
+    right: 0%;
+    width: 100px;
+  }
+  
+  #baaziRewards .splide__arrow--next {
+    right: -2em;
+  }
+  
+  #baaziRewards .splide__arrow--prev {
+    left: -2em;
+  }
+  
+  #baaziRewards .splide__arrow {
+    top: 50%;
+  }
+  
+  /* #baaziRewards .is-visible.is-active{
+      transform: scale(1.1);
+      transition: width 2s;
+  } */
+  
+  .howToplayEndBtn {
+    background: #dde4f7;
+    padding: 14px 25px 13px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .addGamebtn {
+    padding: 13px 10px 13px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .langBtn {
+    padding: 13px 10px 13px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .reftaFriendbtn {
+    padding: 14px 34px 13px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .becomeAffiliate {
+    padding: 14px 34px 13px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .affiliateJoinBtn {
+    padding: 14px 37px 13px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .gamePokerViewMore {
+    padding: 14px 50px 13px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .socials li {
+    display: inline-block;
+    list-style: none;
+    margin: .5rem 0rem 0rem .5rem;
+  }
+  
+  .referAfriendCol {
+    padding-top: 40px;
+  }
+  
+  /* mobile number row css starts */
+  
+  .border-lable-flt {
+    display: block;
+    position: relative;
+  }
+  
+  .border-lable-flt label, .border-lable-flt>span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    font-size: 75%;
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    top: -.5em;
+    left: 0.75rem;
+    z-index: 3;
+    line-height: 1;
+    padding: 0 1px;
+  }
+  
+  .border-lable-flt label::after, .border-lable-flt>span::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    background: white;
+    height: 2px;
+    top: 50%;
+    left: -.2em;
+    right: -.2em;
+    z-index: -1;
+  }
+  
+  .border-lable-flt .form-control::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  
+  .border-lable-flt .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+    opacity: 0;
+  }
+  
+  .border-lable-flt .form-control:placeholder-shown:not(:focus)+* {
+    font-size: 100%;
+    opacity: .5;
+    top: 1.1em;
+  }
+  
+  .input-group .border-lable-flt {
+    display: table-cell;
+  }
+  
+  #FormMob .input-group .border-lable-flt .form-control {
+    border-radius: 0.25rem;
+  }
+  
+  #FormMob .input-group .border-lable-flt:not(:last-child), .input-group .border-lable-flt:not(:last-child) .form-control {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: 0;
+  }
+  
+  #FormMob .input-group .border-lable-flt:not(:first-child), .input-group .border-lable-flt:not(:first-child) .form-control {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+  #FormMob .form-control:focus {
+    color: #804000;
+    background-color: #fff;
+  }
+  
+  legend {
+    margin-bottom: 0;
+  }
+  
+  #mobRowId .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: -4px;
+    padding: 13px 40px;
+    background-color: #eba10d;
+    color: #fff;
+  }
+  
+  textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, [type="text"].form-control:focus, [type="password"].form-control:focus, [type="email"].form-control:focus, [type="tel"].form-control:focus, [contenteditable].form-control:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+  }
+  
+  .btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .form-control:focus {
+    color: #000;
+    border-color: #ccc;
+  }
+  
+  .mobileField .form-control {
+    padding: .7rem 1rem;
+  }
+  
+  #mobRowId .form-control {
+    padding: .72rem 1.9rem;
+    min-width: 12.5rem;
+  }
+  
+  label {
+    color: #ccc;
+  }
+  
+  /* mobile number row css ends */
+  
+  .common-tp40 {
+    padding-top: 10px;
+  }
+  
+  .pContent {
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8292a2;
+    text-align: justify;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  
+  .swipetabfixedintop {
+    position: relative;
+    padding: 34px 0 0;
+  }
+  
+  .rng-certificate {
+    background: linear-gradient( 91.17deg, #041B67 41.73%, #0A2889 102.91%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    margin-bottom: 70px;
+  }
+  
+  .rng-certificate h1{
+    color: #fff;
+  }
+  
+  /* .rng-certificate > h1{
+    color: #fff;
+  }
+  .rng-certificate > p{
+    color: #fff;
+  } */
+  .whitecol {
+    color: #fff;
+  }
+  
+  .rngCertification_button {
+    padding: 6px 25px;
+    border-radius: 94px;
+    color: #fff !important;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #comman-inner-banner {
+    background-color: #0A2889;
+    min-height: 150px;
+  }
+  
+  .aboutsection-content p {
+    color: #717589;
+    text-align: justify;
+  }
+  
+  .aboutusbannermargin {
+    margin-bottom: 100px;
+    background: url(https://web.pokerbaazicdn.com/assets/images/gomobile-bg1.png) no-repeat;
+    background-size: cover;
+  }
+  
+  .about-small-banner {
+    position: relative;
+    bottom: -40px;
+    position: relative;
+    background: url(https://via.placeholder.com/1118x398) center center no-repeat;
+    background-size: cover;
+    padding: 30px 20px;
+    border-radius: 5px;
+  }
+  
+  .about-small-banner .about-small-banner-head {
+    position: relative;
+    text-align: center;
+  }
+  
+  .aboutus-ourteamsection {
+    background-color: #041B67;
+  }
+  
+  .groupiconsection {
+    line-height: 30px;
+  }
+  
+  .groupiconsection p {
+    color: #717589;
+  }
+  
+  .aboutus-ourteamsection .ourteams {
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .aboutus-ourteamsection .ourteams .team-content {
+    position: relative;
+  }
+  
+  .aboutus-ourteamsection .ourteams .team-content a {
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    top: 18px;
+    display: block;
+  }
+  
+  .aboutus-ourteamsection .ourteams .team-img-holder {
+    overflow: hidden;
+    border-radius: 999px;
+    width: 225px;
+    height: 225px;
+    margin: 10px auto 30px auto;
+  }
+  
+  .aboutWrapper {
+    padding-top: 70px;
+  }
+  
+  .top_margin_login {
+    display: flex;
+    justify-content: center;
+    margin: 6.125rem 0rem;
+  }
+  
+  #login .form-control {
+    padding: 0.5rem 0.7rem;
+  }
+  
+  #login ::placeholder {
+    color: #8292a2;
+  }
+ 
+  
+  
+  .oneAppText {
+    background: radial-gradient(219.51% 219.51% at 50% 24.39%, #E3AD0C 0%, #FFBF00 38.85%, #664F0A 62.29%, #EEBC0B 69.58%, rgba(235, 161, 13, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+  }
+
+  #howtoinstall .form-control {
+    background-color: transparent;
+    color: white;
+    font-size: .9rem;
+    background: rgba(255, 255, 255, 0.12);
+  }
+  
+  #howtoinstall ::placeholder {
+    color: rgb(255, 255, 255);
+    text-align: left;
+  }
+  
+  #howtoinstall .downloadLink {
+    background: #eba10d;
+    font-size: .8rem;
+    padding: .6rem;
+    letter-spacing: 1.1px;
+  }
+  
+  #howtoinstall .mobileField {
+    padding-top: 30px;
+  }
+  
+  #hti_card .card {
+    background: radial-gradient(240.34% 240.34% at 50% -30.69%, #2F71FF 0%, #002880 99.99%, rgba(7, 55, 157, 0.93) 100%);
+    border-radius: 10px;
+  }
+  
+  #hti_card .modal-header {
+    border-bottom: none;
+  }
+  
+  #hti_card .modal-content {
+    background: radial-gradient(240.34% 240.34% at 50% -30.69%, #2F71FF 0%, #002880 99.99%, rgba(7, 55, 157, 0.93) 100%);
+    border-radius: 10px;
+  }
+  
+  #hti_card .modal-body {
+    padding-top: 0rem;
+  }
+  
+  /* faq accordion style */
+  
+  #Faq .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(.7) !important;
+  }
+  
+  #Faq .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  }
+  
+  #Faq .accordion-body {
+    background: #F7F8FB;
+    border-radius: 0 0 6px 6px;
+    margin: 0px 7px 7px 7px;
+    color: #8292A2;
+  }
+  
+  #Faq .accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+  }
+  
+  #Faq .accordion-button {
+    font-weight: bold;
+  }
+  
+  #Faq .accordion-button:not(.collapsed) {
+    color: #2F6FF1;
+    font-weight: bold;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  #Faq .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-item:not(:first-of-type) {
+    border: 1px solid rgba(0, 0, 0, .125)
+  }
+  
+  .accordion-header {
+    margin-bottom: 0;
+  }
+  
+  /* STYLE FOR HOW TO INSTALL // */
+  
+
+  
+  .raf_ribbon {
+    background: linear-gradient(180deg, #EFF1F7 0.01%, #E0E9FC 6.56%, #DAE4FA 100%);
+    font-size: .8rem;
+  }
+  
+
+  
+  .becomePartnerBtn {
+    background: #8A0EC5;
+    border: 1px solid #9F10E2;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 8px #6F0B9E;
+    color: #fff;
+  }
+  
+  .becomePartnerBtn:hover {
+    color: #8A0EC5;
+    background: #fff;
+  }
+  
+  #affiliateProgram .joinNowBtnDiv {
+    position: relative;
+    top: 35px;
+  }
+  
+  #affiliateProgram .joinNowBtn {
+    background: #46C6A4;
+    border: 1px solid #9FEAD8;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 8px #3DB199;
+    color: #fff;
+  }
+  
+  #affiliateProgram .joinNowBtn:hover {
+    background: #fff;
+    color: #46C6A4;
+  }
+  
+  #raf .inviteNow {
+    background: #0D3F79;
+    border: 1px solid #0A60A4;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 8px rgba(7, 51, 88, 0.64);
+    border-radius: 54px;
+    color: #fff;
+  }
+  
+  #raf .inviteNow:hover {
+    background: #fff;
+    color: #0D3F79;
+  }
+ 
+  
+  #br .listDiv {
+    position: relative;
+    top: 30px;
+  }
+  
+  #about .joinNow {
+    background: #133D98;
+    border: 1px solid #0E3792;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 8px #1546AF;
+    border-radius: 54px;
+    color: #fff;
+  }
+  
+  #about .joinNow:hover {
+    color: #133D98;
+    border: 1px solid #0E3792;
+    background: #fff;
+  }
+  
+  #about .joinNowBtnDiv {
+    position: relative;
+    top: 30px;
+  }
+  
+  #howtoinstallCBapp .splide__arrow {
+    top: 63%
+  }
+  
+  iframe {
+    border-radius: 10px;
+  }
+  
+  #homeBanner .carousel-caption {
+    top: 50%;
+    transform: translate(-12%, -50%);
+    bottom: initial;
+    letter-spacing: 0;
+  }
+  
+  .steps_card {
+    background: #EAF1FE;
+    padding: 10px 40px 10px 40px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 4px rgba(89, 129, 158, 0.27);
+  }
+  
+  .bg-light {
+    background: rgba(239, 241, 247, 1);
+  }
+  
+  #stepsCard .card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px #EBEBEB;
+    border-radius: 8px;
+    width: 13.2rem;
+  }
+  
+  .bulbClass {
+    float: left;
+    position: relative;
+    bottom: 9px;
+    width: 38px;
+    margin-right: 5px;
+  }
+  
+  .mutedTextsmall {
+    font-size: 14px;
+  }
+  
+  .getApplink {
+    position: relative;
+    bottom: 12px;
+  }
+  
+  .homeSplideClass {
+    position: relative;
+    top: -58px;
+  }
+  
+  .hometextThree {
+    font-size: 82px;
+    font-weight: bold
+  }
+  
+  #login .loginsignupCard {
+    box-shadow: 0px 0px 13px 4px rgba(170, 188, 215, 0.27);
+    border-radius: 12px;
+    background: #fff;
+  }
+  
+  .avator {
+    width: 50px;
+    height: 50px;
+    background-size: 50px!important;
+    background-repeat: no-repeat;
+    background-position: center -2px!important;
+    display: inline-block;
+  }
+  
+  .Avatar_0 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_0.png)!important
+  }
+  
+  .Avatar_1 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_1.png)!important
+  }
+  
+  .Avatar_2 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_2.png)!important
+  }
+  
+  .Avatar_3 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_3.png)!important
+  }
+  
+  .Avatar_4 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_4.png)!important
+  }
+  
+  .Avatar_5 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_5.png)!important
+  }
+  
+  .Avatar_6 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_6.png)!important
+  }
+  
+  .Avatar_7 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_7.png)!important
+  }
+  
+  .Avatar_8 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_8.png)!important
+  }
+  
+  .Avatar_9 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_9.png)!important
+  }
+  
+  .Avatar_10 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_10.png)!important
+  }
+  
+  .Avatar_11 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_11.png)!important
+  }
+  
+  .Avatar_12 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_12.png)!important
+  }
+  
+  .Avatar_13 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_13.png)!important
+  }
+  
+  .Avatar_14 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_14.png)!important
+  }
+  
+  .Avatar_15 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_15.png)!important
+  }
+  
+  .Avatar_16 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_16.png)!important
+  }
+  
+  .Avatar_17 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_17.png)!important
+  }
+  
+  .Avatar_18 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_18.png)!important
+  }
+  
+  .Avatar_19 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_19.png)!important
+  }
+  
+  .Avatar_20 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_20.png)!important
+  }
+  
+  .Avatar_21 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_21.png)!important
+  }
+  
+  .Avatar_22 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_22.png)!important
+  }
+  
+  .Avatar_23 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_23.png)!important
+  }
+  
+  .Avatar_24 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_24.png)!important
+  }
+  
+  .Avatar_25 {
+    background-image: url(https://web.pokerbaazicdn.com/assets/sprites/avatar_25.png)!important
+  }
+  
+  .avatorheader {
+    position: relative;
+  }
+  
+  .avatorheader .dropdown-menu {
+    padding: 0;
+    right: 0;
+    left: auto;
+  }
+  
+  .avatorheader .dropdown-menu a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    background-color: #012980;
+    color: #fff;
+  }
+  
+  .avatorheader .dropdown-menu a+a {
+    border-top: 1px #eee solid;
+    background-color: transparent;
+    color: #012980;
+  }
+  
+  .nav-item.dropdown .dropdown-menu {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item.dropdown .dropdown-menu>div {
+    border: 1px solid rgba(0, 0, 0, .15);
+    margin: 25px 0 0 0;
+    border-radius: .25rem;
+  }
+  
+  .nav-item.dropdown .dropdown-menu>div>li>a {
+    padding: 8px 15px;
+  }
+  
+  .supportbox {
+    border-bottom: 1px dashed #717589;
+    padding-bottom: 30px;
+  }
+  
+  .support-banner {
+    background-image: url(https://web.pokerbaazicdn.com/assets/images/supportbg.jpg);
+  }
+  
+  .generic-banner {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 472px;
+  }
+  
+  .generic-banner__inner {
+    padding-top: 130px;
+  }
+  
+  #referAfriend sup {
+    color: #8292a2;
+  }
+  
+  /* about us why play with us heading images */
+  
+  .hi_1 {
+    background: url(https://web.pokerbaazicdn.com/assets/icons/aboutus-point1.svg) no-repeat left;
+    padding: 8px 10px 0px 69px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+    /* background-size: 16px; */
+    text-align: left;
+    line-height: 2.2;
+  }
+  
+  .hi_2 {
+    background: url(https://web.pokerbaazicdn.com/assets/icons/aboutus-point2.svg) no-repeat left;
+    padding: 8px 10px 0px 69px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+    /* background-size: 16px; */
+    text-align: left;
+    line-height: 2.2;
+  }
+  
+  .hi_3 {
+    background: url(https://web.pokerbaazicdn.com/assets/icons/aboutus-point3.svg) no-repeat left;
+    padding: 8px 10px 0px 69px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+    /* background-size: 16px; */
+    text-align: left;
+    line-height: 2.2;
+  }
+  
+  .hi_4 {
+    background: url(https://web.pokerbaazicdn.com/assets/icons/aboutus-point4.svg) no-repeat left;
+    padding: 8px 10px 0px 69px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+    /* background-size: 16px; */
+    text-align: left;
+    line-height: 2.2;
+  }
+  
+  .hi_5 {
+    background: url(https://web.pokerbaazicdn.com/assets/icons/aboutus-point5.svg) no-repeat left;
+    padding: 8px 10px 0px 69px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+    /* background-size: 16px; */
+    text-align: left;
+    line-height: 2.2;
+  }
+  
+  .hi_6 {
+    background: url(https://web.pokerbaazicdn.com/assets/icons/aboutus-point6.svg) no-repeat left;
+    padding: 8px 10px 0px 69px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+    /* background-size: 16px; */
+    text-align: left;
+    line-height: 2.2;
+  }
+  
+  /* about us why play with us heading images // */
+  
+  .border-lable-flt::before {
+    position: absolute;
+    content: "+91";
+    line-height: 49.3px;
+    border-right: 1px solid #ced4da;
+    padding: 0 10px;
+  }
+  
+  .border-lable-flt label, .border-lable-flt>span {
+    left: 3.85rem;
+  }
+  
+  .border-lable-flt .form-control:placeholder-shown:not(:focus)+* {
+    font-size: 100%;
+    opacity: 0;
+    top: 1.1em;
+  }
+  
+  #mobRowId .form-control {
+    padding: .72rem 2.9rem;
+  }
+  
+  #splideJS-track {
+    padding: 2rem 0rem 2rem;
+  }
+  
+  #splideJS .splide {
+    padding: 20px 0;
+  }
+  
+  #splideJS .splide__slide img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 400ms;
+    transform: scale(0.9);
+    transform-origin: center center;
+    z-index: 1;
+  }
+  
+  #splideJS .splide__slide.is-active img {
+    transform: scale(1.3);
+    position: relative;
+    z-index: 999;
+  }
+  
+  /* game poker promotions slider */
+  
+  #splideJS2-track {
+    padding: 2rem 0rem 2rem;
+  }
+  
+  #splideJS2 .splide {
+    padding: 20px 0;
+  }
+  
+  #splideJS2 .splide__slide img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 400ms;
+    transform: scale(0.9);
+    transform-origin: center center;
+    z-index: 1;
+    padding: 0px 22px 0px
+  }
+  
+  #splideJS2 .splide__slide.is-active img {
+    transform: scale(1.3);
+    position: relative;
+    z-index: 999;
+  }
+  
+  #cbpp1 .splide__arrow--prev {
+    left: -2em;
+  }
+  
+  #cbpp1 .splide__arrow--next {
+    right: -2em;
+  }
+  
+  #cbpp2 .splide__arrow--prev {
+    left: -2em;
+  }
+  
+  #cbpp2 .splide__arrow--next {
+    right: -2em;
+  }
+  
+  /* ============ desktop view ============ */
+  
+  @media all and (min-width: 992px) {
+    #myHeader .navbar .nav-item .dropdown-menu {
+      display: none;
+    }
+    #myHeader .navbar .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+    #myHeader .navbar .nav-item .dropdown-menu {
+      margin-top: 0;
+    }
+  }
+  
+  /* ============ desktop view .end// ============ */
+  
+  #myHeader .dropdown-item {
+    font-size: 14px;
+  }
+  
+  .animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    /*left: 0; */
+    right: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  .animated-icon3 span {
+    background: #2643a0;
+  }
+  
+  /* Icon 3 */
+  
+  .animated-icon3 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: right center;
+    -moz-transform-origin: right center;
+    -o-transform-origin: right center;
+    transform-origin: right center;
+  }
+  
+  .animated-icon3 span:nth-child(2) {
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  
+  .animated-icon3 span:nth-child(3) {
+    top: 20px;
+    -webkit-transform-origin: right center;
+    -moz-transform-origin: right center;
+    -o-transform-origin: right center;
+    transform-origin: right center;
+  }
+  
+  .animated-icon3.open span:nth-child(1) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0px;
+    left: 2px;
+  }
+  
+  .animated-icon3.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .animated-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 24px;
+    left: 2px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .generic-banner {
+      height: 300px !important;
+      background-position: bottom !important;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .support-banner {
+      background-image: url(https://web.pokerbaazicdn.com/assets/images/supportbg-mobile.png);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .generic-banner {
+      height: 300px !important;
+      background-position: bottom !important;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .generic-banner__inner {
+      padding-top: 130px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .w-49 {
+      width: 49%;
+    }
+  }
+  
+  .generic-button {
+    background: #2F6FF1;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .01em;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-top: 15px;
+  }
+  
+  .generic-button:hover {
+    color: #fff;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .generic-banner__title {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .hideHeadingDesktop {
+      display: none;
+    }
+    #MobNum-cards {
+      display: none;
+    }
+    .btnHideonDesktop {
+      display: none;
+    }
+    .swipetabfixedintop {
+      position: relative;
+      padding: 0;
+    }
+    .about-small-banner {
+      padding: 150px 20px;
+    }
+    .aboutBreadcrumb {
+      margin-top: 0!important;
+    }
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  
+  @media only screen and (max-width: 767px) {
+    .btnHideonDesktop .btn {
+      position: relative;
+      top: 22px;
+    }
+    .btnHideonMobile {
+      display: none;
+    }
+    .text-sm-center, #referAfriend {
+      text-align: center;
+    }
+    .mobnumRow .text-sm-center {
+      text-align: center;
+    }
+    .mobRow, .hideHeading, #carouselbtnHide, #carouselbtnHide1 {
+      display: none;
+    }
+    .footLinks img {
+      margin: 0 auto;
+      text-align: center;
+    }
+    .brands li {
+      display: inline-block;
+      list-style: none;
+      margin-left: 10px;
+    }
+    .imageRound {
+      position: relative;
+      top: 27px;
+      z-index: 999;
+    }
+    .brands ul {
+      text-align: center;
+      margin-right: 13%;
+      margin-left: 10%;
+    }
+    .socials li {
+      display: inline-block;
+      list-style: none;
+      margin-left: 10px;
+    }
+    .socials ul {
+      text-align: center;
+      /* margin-right: 24%;
+          margin-left: 10%; */
+    }
+    .certificate li {
+      display: inline-block;
+      list-style: none;
+    }
+    .certificate ul {
+      text-align: center;
+      /* margin-right: 27%;
+          margin-left: 10%; */
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footLinks ul li {
+      font-size: 12px;
+    }
+    .footLinks .text-xs-center {
+      text-align: center;
+    }
+    .hideMoblinks {
+      display: none;
+    }
+    #Testimonials .splide__arrow--next {
+      right: .1em;
+    }
+    #Testimonials .splide__arrow--prev {
+      left: 8px;
+    }
+    #variants .splide__arrow--next {
+      right: .1em;
+    }
+    #variants .splide__arrow--prev {
+      left: 0em;
+    }
+    #promotions .splide__arrow--next {
+      right: .1em;
+    }
+    #promotions .splide__arrow--prev {
+      left: 0em;
+    }
+    #baaziRewards .splide__arrow--next {
+      right: 1em;
+    }
+    #baaziRewards .splide__arrow--prev {
+      left: 1em;
+    }
+    #cbpp1 .splide__arrow--prev {
+      left: 1em;
+    }
+    #cbpp1 .splide__arrow--next {
+      right: 1em;
+    }
+    #cbpp2 .splide__arrow--prev {
+      left: 1em;
+    }
+    #cbpp2 .splide__arrow--next {
+      right: 1em;
+    }
+    #baaziRewards .card {
+      margin: 0px 45px;
+    }
+    #howToplay .px-sm-3 {
+      padding: 20px 17px 0!important;
+    }
+    .howToplayEndBtn {
+      padding: 10px 24px 7px;
+    }
+    .addGamebtn {
+      padding: 10px 10px 7px;
+      margin-right: 2px!important;
+    }
+    .langBtn {
+      padding: 10px 10px 7px;
+      margin-right: 2px!important;
+    }
+    .btnLogin {
+      background: #dde4f7;
+      color: #0d6efd;
+    }
+    #howToplay .videoImage {
+      margin-top: 15px;
+    }
+    #referAfriend .px-sm-3 {
+      padding: 20px 17px 0!important;
+    }
+    #affiliate .px-sm-3 {
+      padding: 20px 17px 15px!important;
+    }
+    #glossary-faq .pt-sm-3 {
+      padding-top: 15px!important;
+    }
+    .affPro {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+      gap: 40%;
+    }
+    .carouselTxt {
+      /* color: white; */
+      text-align: center;
+      vertical-align: middle;
+      max-width: 100%;
+      left: 17%;
+      right: 10%;
+      top: 25%;
+      padding: 10px;
+      height: 100%;
+    }
+    .hide-desktop {
+      display: none;
+    }
+    .copyrightPadding {
+      padding-left: 2rem;
+    }
+    img.w-100.cardImg75prsnt {
+      width: 75%!important;
+      margin-left: 12%;
+    }
+    .rummyRespon {
+      width: 75% !important;
+    }
+    /* .mobnumRow .cardsrow .howToplay .baaziRewards .referAfriend .affiliate .Testimonials .otherApps{
+        padding: 3rem 0;
+      } */
+    section#MobNum-cards {
+      padding-bottom: 2rem;
+    }
+    section#howToplay {
+      padding: 1.5rem 0rem;
+    }
+    section#baaziRewards {
+      padding: 1.5rem 0rem;
+    }
+    section#variants {
+      padding: 1.5rem 0rem;
+    }
+    section#Testimonials {
+      padding: 1.5rem 0rem 0rem;
+    }
+    section#promotions {
+      padding: 1.5rem 0rem 0rem;
+    }
+    section.otherApps {
+      margin: 1.5rem 0rem 5rem!important;
+    }
+    .aboutWrapper {
+      padding-top: 110px;
+    }
+    .aboutBreadcrumb {
+      margin-top: 0!important;
+    }
+    .top_margin_login {
+      margin: 8.125rem 0rem 0rem;
+    }
+    .loginPadding {
+      padding: 0px 20px 100px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .gamePokerViewMore {
+      padding: 10px 21px 8px;
+      font-weight: bold;
+      font-size: .5rem;
+      margin-bottom: 10px;
+    }
+    .letthetext {
+      position: static;
+      text-align: center;
+    }
+    .RAFHeading {
+      font-size: 13px
+    }
+    .RAFInviteBtn {
+      padding-left: 0;
+      padding-right: 0
+    }
+    .envelopeClass {
+      width: 50px;
+    }
+    /* STYLE FOR HOW TO INSTALL PAGE MOBILE */
+    #faq .carousel-caption {
+      top: 80%;
+      transform: translate(0%, -51%);
+      bottom: initial;
+      left: 0%;
+      right: 0%;
+    }
+    #faq .carousel-caption h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    #faq .carousel-caption p {
+      font-size: .8rem;
+    }
+    #affiliateProgram .carousel-caption {
+      top: 80%;
+      transform: translate(0%, -51%);
+      bottom: initial;
+      left: 0%;
+      right: 0%;
+    }
+    #affiliateProgram .carousel-caption h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    #affiliateProgram .carousel-caption h4 {
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 2.2px;
+    }
+    #affiliateProgram .carousel-caption p {
+      font-size: .8rem;
+      letter-spacing: 0;
+    }
+    #affiliateProgram .joinNowBtnDiv {
+      position: static;
+    }
+    #about .joinNowBtnDiv {
+      position: static;
+    }
+    #raf .carousel-caption {
+      top: 80%;
+      transform: translate(0%, -51%);
+      bottom: initial;
+      left: 0%;
+      right: 0%;
+    }
+    #raf .carousel-caption h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    #raf .carousel-caption h3 {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    #raf .carousel-caption h4 {
+      font-size: .6rem;
+      font-weight: bold;
+      letter-spacing: 2.2px;
+    }
+    #raf .carousel-caption p {
+      font-size: .8rem;
+      letter-spacing: 0;
+      margin-bottom: 5px;
+    }
+    #raf .inviteNowBtnDiv {
+      position: static;
+    }
+    #br .carousel-caption {
+      top: 80%;
+      transform: translate(0%, -51%);
+      bottom: initial;
+      left: 0%;
+      right: 0%;
+    }
+    #br .carousel-caption h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    #br .carousel-caption p {
+      font-size: .8rem;
+      letter-spacing: 0;
+      margin: 0;
+    }
+    ul.br li {
+      line-height: 1.4;
+    }
+    #br .listDiv {
+      position: relative;
+      left: 28%;
+      top: 5px;
+    }
+    #about .carousel-caption {
+      top: 80%;
+      transform: translate(0%, -51%);
+      bottom: initial;
+      left: 0%;
+      right: 0%;
+    }
+    #about .carousel-caption h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    #about .carousel-caption p {
+      font-size: .8rem;
+      margin: 3px;
+    }
+    #homeBanner .carousel-caption {
+      top: 32%;
+      transform: translate(-12%, -50%);
+      bottom: initial;
+      letter-spacing: 0;
+      left: 20%;
+      right: 0%;
+    }
+    #gamePoker .carousel-caption {
+      top: 84%;
+      transform: translate(0%, -51%);
+      bottom: initial;
+      left: 0%;
+      right: 0%;
+    }
+    #gamePoker .carousel-caption h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+    }
+    #gamePoker .carousel-caption p {
+      font-size: .8rem;
+      padding: 0;
+      margin: 0;
+    }
+    #gamePoker .langBtn {
+      padding: 7px 19px 7px;
+      margin-right: 2px!important;
+      margin-top: 7px;
+    }
+    #howtoinstall .btnHideonMobile {
+      display: none!important;
+    }
+    .text-sm-center {
+      text-align: center;
+    }
+    .imagew100 {
+      width: 100%!important;
+    }
+    .px-sm-2 {
+      padding: 0rem 1rem!important;
+    }
+    .welcomeText {
+      font-size: .8rem;
+      padding-bottom: 10px;
+    }
+    .bbottom {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 3px;
+      padding-bottom: 4px;
+    }
+    /* STYLE FOR HOW TO INSTALL PAGE MOBILE // */
+    /* affiliate program 4 steps section */
+    .zigzagbg {
+      background-image: none;
+      background-color: rgba(239, 241, 247, 1);
+    }
+    /* affiliate program 4 steps section // */
+    .homeBannertxt {
+      font-size: 19px;
+      margin: 0;
+    }
+    .homeBannertxt2 {
+      font-size: 28px;
+      margin: 0;
+    }
+    .homeBannertxt3 {
+      margin: 0;
+      font-size: 13px;
+    }
+    #Testimonials .card-body {
+      padding-bottom: 1rem;
+    }
+    #stepsCard .card {
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px #EBEBEB;
+      border-radius: 8px;
+    }
+    #stepsCard .splide__arrow--prev {
+      left: .5em;
+    }
+    #stepsCard .splide__arrow--next {
+      right: .5em;
+    }
+    .aff_pro_heading {
+      font-size: 19px;
+    }
+    #login h4 {
+      font-size: 19px;
+    }
+  }
+  
+  #houseOfBaazi .carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    border: 3px solid #fff;
+  }
+  
+  #houseOfBaazi .carousel-indicators {
+    bottom: -10px;
+  }
+  
+  @media only screen and (max-width: 990px) {
+    #houseOfBaazi .responsiveText p {
+      font-size: 12px;
+      line-height: 1.3;
+    }
+    #houseOfBaazi button .knowMoreButton {
+      font-size: .7rem;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #houseOfBaazi .responsiveText {
+      font-size: 12px;
+    }
+  }
+  
+  .border-lable-flt::before {
+    color: #CED4DA;
+  }
+  
+  #houseOfBaazi .round-img {
+    border-radius: 8px 0px 0px 8px;
+  }
+  
+  #houseOfBaazi .round-card {
+    border-radius: 0px 8px 8px 0px;
+    background-color: #002880;
+  }
+  
+  #houseOfBaazi .knowMoreButton {
+    background: #cdd2ed;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: .2rem 2rem;
+    border-radius: 20px;
+    color: #002880;
+    border: 0;
+  }
+  
+  #MobNum-cards .splide__arrow--prev {
+    left: .5em;
+  }
+  
+  #MobNum-cards .splide__arrow--next {
+    right: .7em;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #houseOfBaazi .round-img {
+      border-radius: 8px;
+    }
+    #houseOfBaazi .round-card {
+      border-radius: 8px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    #houseOfBaazi .footbanHead {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .baazi-rewards__table-outer {
+    overflow: auto;
+    height: 40vh;
+  }
+  
+  .baazi-rewards__table thead {
+    background-color: #F3F6F9;
+    color: #464E5F;
+    border-radius: 8px;
+  }
+  
+  .baazi-rewards__td-head-black {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #464E5F;
+  }
+  
+  .baazi-rewards__td-body-muted {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #B5B5C3;
+  }
+  
+  .baazi-rewards__table-outer::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .baazi-rewards__table-outer::-webkit-scrollbar-track {
+    background: #D0DADD;
+  }
+  
+  .baazi-rewards__table-outer::-webkit-scrollbar-thumb {
+    background-color: #F3F6F9;
+    border-radius: 20px;
+    border: 3px solid #D0DADD;
+  }
+  
+  .baazi-rewards__table-outer::-webkit-scrollbar-thumb:hover {
+    background: #2F6FF1;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .baazi-rewards__table td {
+      vertical-align: middle;
+    }
+    .baazi-rewards__table-outer {
+      overflow-x: hidden;
+    }
+  }
+  
+  .mb-lg-5.mobnumRow>.container.cards.mobRow>.d-flex.justify-content-between {
+    display: none !important;
+  }
+  
+  .navbar-brand #Logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .avatorheader .dropdown-menu {
+    top: 58px !important
+  }
+  
+  @media(max-width:768px) {
+    .avatorheader .dropdown-menu {
+      top: 8px !important
+    }
+  }
+  
+  .fixed-download-btm {
+    width: 100%;
+    background: #EBA10D;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    z-index: 111;
+  }
+  
+  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  @media only screen and (max-width: 576px) {
+    #stepsCard #splide6-track img {
+        max-width: 50%;
+    }
+  }

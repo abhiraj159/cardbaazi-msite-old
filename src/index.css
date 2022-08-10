@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.buttonRadius {
+  border-radius: 2rem;
+  vertical-align: middle;
+}
+
+.nav-item{
+  color: #041b67;
+  padding: 4px 16px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link a {
+  font-size: 14px;
+}
+
+.animated-icon3 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px
+px
+;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+/* How to play cricket fantacy (start) */
+p {
+  font-size: 16px;
+}
+
+.text-blue {
+  color: #2f6ff1;
+}
+
+.text-muted-custom {
+  color: #8292a2;
+}
+
+.gamePokerViewMore {
+  padding: 10px 21px 8px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+  border-radius: 2rem;
+  vertical-align: middle;
+}
+
+.howToplayEndBtn {
+  background: #dde4f7;
+  padding: 10px 25px 8px;
+  ;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 2rem;
+  vertical-align: middle;
+}
+
+/* How to play cricket fantacy (end) */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
